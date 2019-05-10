@@ -40,9 +40,8 @@ end
 
 def selective_tweet_shortener(tweet)
   if tweet.chars.length > 140
-    tweet.collect do |words|
-      return word_substituter(words)
-    end
+    return word_substituter(words)
+  end
   else 
     return tweet
   end
