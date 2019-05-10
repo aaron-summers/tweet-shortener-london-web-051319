@@ -19,8 +19,9 @@ def dictionary
 end
 
 def word_substituter(tweet)
- words = tweet.split(' ')
- words.collect do |word| 
+  sub = dictionary
+  words = tweet.split(' ')
+  words.collect do |word| 
     dictionary.collect do |key, value|
       #binding.pry
       if word == key 
