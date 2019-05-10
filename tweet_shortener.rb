@@ -31,11 +31,7 @@ words.join(" ")
 end
 
 def bulk_tweet_shortener(array)
-#   array.map do |words|
-#     puts word_substituter(words)
-#   end
-# end
-  tweets_array.collect do |tweet|
-    puts word_substituter(tweet)
+  array.collect do |words|
+    puts word_substituter(words)
   end
-end 
+end
