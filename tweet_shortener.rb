@@ -49,5 +49,8 @@ end
 def shortened_tweet_truncator(tweet)
   max = 140
   if tweet.chars.length > max 
-    return "#{tweet.}"
+    return "#{tweet[0..max]}"
+  else
+    return tweet
+  end
 end
