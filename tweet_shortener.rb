@@ -32,6 +32,7 @@ end
 
 def bulk_tweet_shortener(array)
   
-  
+  array.collect do |words|
+    
   
 end
