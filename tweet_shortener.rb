@@ -21,6 +21,7 @@ def word_substituter(tweet)
  words.collect do |word| 
     dictionary.collect do |key, value|
       #binding.pry
+      if word
       word = dictionary[word.downcase]
       #binding.pry
     else
