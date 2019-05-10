@@ -19,7 +19,7 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  sub = dictionary
+  #sub = dictionary
   words = tweet.split(' ')
   words.collect do |word| 
     dictionary.collect do |key, value|
@@ -38,3 +38,4 @@ def bulk_tweet_shortener(array)
     puts word_substituter(words)
   end
 end
+
