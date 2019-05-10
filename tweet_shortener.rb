@@ -19,7 +19,7 @@ end
 def word_substituter(tweet)
  words = tweet.split(' ')
  words.collect do |word| 
-    dictionary.(word)
+    dictionary.collect (word)
       #binding.pry
       word = dictionary[word.downcase]
       #binding.pry
