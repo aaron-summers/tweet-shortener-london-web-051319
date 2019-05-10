@@ -22,7 +22,7 @@ def word_substituter(tweet)
     dictionary.collect do |key, value|
       #binding.pry
       if word == key 
-      word = dictionary[word.downcase]
+      word.replace(value)
       #binding.pry
     else
       word
