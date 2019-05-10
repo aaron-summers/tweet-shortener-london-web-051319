@@ -17,7 +17,7 @@ def word_substituter(tweet)
     if dictionary.keys.include?(word)
       word = dictionary[word]
     else
-      return word
+      return word.join(" ")
     end
   end
   word
