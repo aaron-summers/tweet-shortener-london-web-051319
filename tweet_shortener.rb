@@ -19,7 +19,6 @@ def dictionary
 end
 
 def word_substituter(tweet)
-  #sub = dictionary
   words = tweet.split(' ')
   words.collect do |word| 
     dictionary.collect do |key, value|
